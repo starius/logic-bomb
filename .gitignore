@@ -31,6 +31,10 @@
 # Debug files
 *.dSYM/
 
+# vim
+*.swo
+*.swp
+
 # Kernel module build artifacts
 .*.cmd
 *.mod.c

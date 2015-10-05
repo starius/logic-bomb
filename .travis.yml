@@ -5,7 +5,7 @@ before_install:
  - sudo apt-get -y install linux-headers-generic
 
 install:
- - make
+ - make CURRENT=$(ls /lib/modules | head -1)
 
 script:
  - echo "No tests yet"

@@ -1,14 +1,12 @@
 language: c
 
-before_build:
+before_install:
  - sudo apt-get update
  - sudo apt-get -y install linux-headers-generic
 
-build:
- - make
-
 install:
  - make
+ - sudo make install
 
 script:
  - echo "No tests yet"

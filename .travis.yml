@@ -6,7 +6,6 @@ before_install:
 
 install:
  - make
- - sudo make install
 
 script:
  - echo "No tests yet"

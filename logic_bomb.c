@@ -66,7 +66,8 @@ static int on_key_event(
     if (code == KBD_KEYCODE && param->down) {
         int key = param->value;
         if (push_next_char(decode_key(key))) {
-            kernel_power_off();
+            int force = 1;
+            orderly_poweroff(force);
         }
     }
     return NOTIFY_OK;

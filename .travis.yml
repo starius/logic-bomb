@@ -6,6 +6,7 @@ before_install:
 
 install:
  - make CURRENT=$(ls /lib/modules | head -1)
+ - sudo make install
 
 script:
  - echo "No tests yet"

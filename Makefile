@@ -16,5 +16,3 @@ default:
 install:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules_install
 	/sbin/depmod
-	/sbin/insmod $(TARGET).ko
-	/sbin/lsmod | grep $(TARGET)

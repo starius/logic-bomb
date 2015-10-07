@@ -15,4 +15,4 @@ default:
 
 install:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules_install
-	/sbin/depmod
+	/sbin/depmod $(CURRENT)

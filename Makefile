@@ -18,8 +18,3 @@ install:
 	/sbin/depmod
 	/sbin/insmod $(TARGET).ko
 	/sbin/lsmod | grep $(TARGET)
-
-uninstall:
-	/sbin/rmmod $(TARGET)
-	rm -v $(DEST)/$(TARGET).ko
-	/sbin/depmod
